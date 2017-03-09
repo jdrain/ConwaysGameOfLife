@@ -4,7 +4,7 @@ import time
 import sys
 
 #get user args for board size and game length
-if len(sys.argv) != 3:
+if len(sys.argv) != 3 or not sys.argv[1].isdigit() or not sys.argv[2].isdigit():
     print("use is of the form: python test_script.py <board size> <game length>\n")
 else:
     b=board(int(sys.argv[1]))
