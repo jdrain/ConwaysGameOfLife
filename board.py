@@ -24,7 +24,7 @@ class board:
                 "x" if self.board[i][j].status == 1 else " " for j in range(0,self.size)
               ]
 
-            print("".join(s))
+            print(" ".join(s))
 
     def neighbor_count(self,i,j):
         #if i is 0 or self.size
